@@ -12,18 +12,21 @@
 
 
 .footer__title {
-  
+    display: block; 
     width: 232px; 
     font-family: Titan One;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
+    padding-left: 22px; 
+    padding-bottom: 17px; 
     text-transform: uppercase;
     color: #FFA5BA;
 }
 
 .footer__title-second {
+    display: block; 
     width: 200px;
     font-family: Titan One;
     height: 76px; 
@@ -31,6 +34,7 @@
     font-weight: normal;
     font-size: 34px;
     line-height: 39px;
+    padding-left: 20px; 
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #d41443;
@@ -39,28 +43,34 @@
 
 .footer__social-list {
     display: flex;
-    justify-content: space-evenly; 
+    justify-content: flex-end; 
     margin-bottom: 46px;
     padding-right: 20px;
     list-style: none;                                             
 
 }
 
-.footer__social-list-item:not(:last-child) { 
-    margin-right: 28px;
+.footer_social-list-item:not(:last-child) {
+  padding-right: 20px
+
+}
+
+.footer__social-list-item { 
+    /* margin-right: 28px; */
+    padding-left: 28px;
+
   }
 
 .footer__contact-title{
 
-    /*padding-left: 70px; 
-    padding-top: 46px; 
-    top: 6962px;*/
     font-family: DM Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 1.86;
     text-align: right;
+    padding-right: 20px; 
+    padding-bottom: 43px; 
    
 
 }
@@ -73,30 +83,31 @@
     text-align: right;
     color: #D41443;
     text-decoration: none;
-    padding-right: 20px;
+    /* padding-right: 20px; */
     
   }
 
   .copyright {
-   
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap; 
     margin-top: 22px;
     padding-bottom: 25px;
     padding-left: 79px; 
+    padding-right: 91px; 
   }
 
 
   .container-copyright {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;  
     background-color: var(--secondPColor);
    
   }
   .copyright__link {
     font-style: normal;
     font-weight: bold;
-    width: 150px;
-    height: 42px; 
+    /* width: 150px;
+    height: 42px;  */
     font-size: 14px;
     line-height: 152%;
     text-align: center;
@@ -162,49 +173,61 @@
       
     @media screen and (min-width:768px) {
       
-    .container-footer {
-        display: flex;
-        justify-content: space-between;
-      
+    .footer__container {
+      display: flex;
+      justify-content: flex-start;
+        
       }
-    .footer__right-side {
-      margin-top: -50px;
+    .footer__right {
+      display: flex;
+      flex-direction: column;
+
         
       }
     .line {
-        max-width: 768px;
-        border-right: none;
-        border-left:none;
-        border-top: var(--central-color);
+      max-width: 768px;
+      border-right: none;
+      border-left:none;
+      border-top: var(--central-color);
       padding-top: 91px;
       }
     .copyright{
-        inline-size: initial;
-        word-break: unset;
-        align-items: center;
-        padding-bottom: 18px;
+      inline-size: initial;
+      word-break: unset;
+      align-items: center;
+      padding-bottom: 18px;
+      padding-top: 29px; 
       }
     .social-list__link {
-        width: 34px;
-        height: 34px;
+      width: 34px;
+      height: 34px;
       }
     .footer__title {
-        font-size: 26px;
-        line-height: 30px;
-        letter-spacing: 0.04em;
-        max-width: 340px;
-        margin-bottom: 16px;
-        padding-top: 0;
+      font-size: 26px;
+      line-height: 30px;
+      letter-spacing: 0.04em;
+      max-width: 340px;
+      margin-bottom: 16px;
+      padding-left: 36px; 
+      padding-top: 0;
       }
     .footer__title-second {
-        font-size: 48px;
+      font-size: 48px;
       line-height: 55px;
       letter-spacing: 0.06em;
+      padding-left: 36px; 
       }
     .footer__contact-title {
-        font-size: 14px;
+      font-size: 14px;
       line-height: 186%;
       }
+    /* .footer__social-list {
+      padding-right: 36px; 
+    } */
+    .copyright__link {
+      
+      /* padding-left: 248px;  */
+    }
       }
     @media screen and (min-width:1200px) {
       
