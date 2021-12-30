@@ -55,7 +55,7 @@
 }
 
 .footer__social-list-item { 
-    /* margin-right: 28px; */
+     
     padding-left: 28px;
 
   }
@@ -82,7 +82,7 @@
     text-align: right;
     color: #D41443;
     text-decoration: none;
-    /* padding-right: 20px; */
+    
     
   }
 
@@ -105,12 +105,9 @@
   .copyright__link {
     font-style: normal;
     font-weight: bold;
-    /* width: 150px;
-    height: 42px;  */
     font-size: 14px;
     line-height: 152%;
     text-align: center;
-    /*color: var( );*/
     color: #907E82;
     text-decoration: none;
   }
@@ -121,6 +118,8 @@
 
   .footer__line {
     padding: 0px;
+    border: 1px solid #E1E1E1; 
+    width: 320px;  
   
     
   }
@@ -137,6 +136,8 @@
     border-radius: 50%;
     width: 32px;
     height: 32px;
+
+    
   }
   
   .social-list__link:hover,
@@ -181,16 +182,9 @@
     .footer__right {
       flex-direction: row; 
       justify-content: space-between;
-
         
       }
-    .line {
-      max-width: 768px;
-      border-right: none;
-      border-left:none;
-      border-top: var(--central-color);
-      padding-top: 91px;
-      }
+ 
     .copyright{
       display: flex;
       inline-size: initial;
@@ -218,17 +212,29 @@
       line-height: 55px;
       letter-spacing: 0.06em;
       padding-left: 36px; 
+      padding-bottom: 91px; 
       }
+
     .footer__contact-title {
       font-size: 14px;
       line-height: 186%;
       }
-    /* .footer__social-list {
-      padding-right: 36px; 
-    } */
-     
+
+    .footer__line {
+      
+      padding: 0px;
+      border: 1px solid #E1E1E1; 
+      width: 768px;  
       }
+    }
+         
     @media screen and (min-width:1200px) {
+
+      .footer__container-copy {
+        display: flex;
+        padding-left: 248px;
+        
+        }
          
     .footer__title {
         font-size: 34px;
@@ -244,14 +250,7 @@
         padding-left: 113px; 
       }
   
-    .line {
-        
-        border-right: none;
-        border-left:none;
-        max-width: 1280px; 
-        padding-top: 97px;
-      }
-      
+  
     .container-copyright {
         padding-bottom: 10px;
         
@@ -266,7 +265,12 @@
       margin-top: 34px; 
       padding-right: 122px; 
       padding-bottom: 50px; 
-       
-
     }
+    .footer__line {
+      
+      padding: 0px;
+      border: 1px solid #E1E1E1; 
+      width: 1200px;  
+      }
+
       }
